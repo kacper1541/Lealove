@@ -11,8 +11,8 @@ body {
 
 }
 h1 {
-    font-size: 44px;
-    margin-top: -30px;/* Adjust the font size to your desired value */
+    font-size: 47px;
+    margin-top: -40px;/* Adjust the font size to your desired value */
 
 }
 header {
@@ -21,7 +21,7 @@ header {
     display: flex; /* Corrected the spelling of display */
     justify-content: flex-end;
     padding: 0px;
-    margin-top: 15px; /* Corrected the colon after margin-top */
+    margin-top: 10px; /* Corrected the colon after margin-top */
 }
 
 .share-button {
@@ -58,7 +58,7 @@ a {
     align-items: center;
     padding: 10px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-    margin-top: -15px;
+    margin-top: -35px;
 
     animation-name: breathe;
     animation-duration: 3s; /* Adjust the duration as needed */
@@ -111,9 +111,26 @@ body {
 
 #user-location {
     font-family: 'Bahnschrift', sans-serif;
-    font-size: 32px;/* Replace 'YourDesiredFont' with the actual font name */
+    font-size: 22px;/* Replace 'YourDesiredFont' with the actual font name */
 }
 
 #pin-emoji {
     font-family: 'YourDesiredFont', sans-serif; /* Replace 'YourDesiredFont' with the actual font name */
+}
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Add this in your external CSS file (Styles.css) */
+    .move-left {
+        margin-left: 10px; /* Adjust the margin-left value as needed */
+    }
+    /* CSS rule targeting the image with the "custom-image" class */
+    .custom-image {
+        /* Your CSS styles for the image go here */
+        /* For example, you can adjust the margin-left property to move the image to the left */
+        margin-left: -85px; /* Adjust the value as needed */
+    }
+
 }
