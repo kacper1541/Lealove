@@ -1,119 +1,149 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(250, 195, 243);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree clone</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(250, 195, 243);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100vw;
+        }
 
+        h1 {
+            font-size: 3em;
+            margin-top: -30px; /* Adjust the font size and margin-top as needed */
+        }
 
+        header {
+            width: 95%;
+            max-width: 688px;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0;
+            margin-top: 15px;
+        }
 
-}
-h1 {
-    font-size: 44px;
-    margin-top: -30px;/* Adjust the font size to your desired value */
+        .share-button {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: rgb(252, 247, 252);
+        }
 
-}
-header {
-    width: 95%;
-    max-width: 688px;
-    display: flex; /* Corrected the spelling of display */
-    justify-content: flex-end;
-    padding: 0px;
-    margin-top: 15px; /* Corrected the colon after margin-top */
-}
+        .container {
+            width: 90%;
+            max-width: 680px;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.share-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: rgb(252, 247, 252);
-}
+        a {
+            text-decoration: none;
+            color: rgb(3, 3, 3);
+        }
 
-.container {
-    width: 90%;
-    max-width: 680px;
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+        .tile {
+            width: 80%;
+            height: 5em;
+            background-color: rgb(252, 250, 252);
+            margin: 7px;
+            border-radius: 48px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+            margin-top: -15px;
 
+            animation-name: breathe;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
 
-}
+        @keyframes breathe {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
 
-a {
-    text-decoration: none;
-    color: rgb(3, 3, 3);
-}
+        .image-container {
+            max-height: 80vh; /* Set maximum height to ensure it's not too large on mobile */
+            width: 90%; /* Adjust the width as needed */
+            overflow: hidden;
+        }
 
-.tile {
-    width: 80%;
-    height: 70px;
-    background-color: rgb(252, 250, 252);
-    margin: 7px;
-    border-radius: 48px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-    margin-top: -15px;
+        .image-container img {
+            width: 100%;
+            height: auto; /* Allow the image to scale proportionally */
+        }
 
-    animation-name: breathe;
-    animation-duration: 3s; /* Adjust the duration as needed */
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite; /* Infinite loop */
-}
+        .icon {
+            margin: 4px 8px;
+            width: 10%; /* Adjust the width as needed */
+            max-width: 64px; /* Set maximum width */
+            height: auto; /* Allow the icon to scale proportionally */
+        }
 
-@keyframes breathe {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05); /* Scale up */
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+        .tile:hover {
+            transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
+            transform: scale(1.03);
+        }
 
+        body {
+            background-image: url(https://images.unsplash.com/photo-1614283180581-d5988fd52837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGluayUyMGdyYWRpZW50fGVufDB8fDB8fHww&w=1000&q=80);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-.image-container {
-    height: 296px;
-    width: 296px;
-    overflow: hidden;
+        #user-location {
+            font-family: 'Bahnschrift', sans-serif;
+            font-size: 2em; /* Adjust the font size as needed */
+        }
 
-}
+        #pin-emoji {
+            font-family: 'YourDesiredFont', sans-serif;
+        }
+    </style>
+</head>
+<body>
 
-.image-container img {
-    height: 100%;
-    width: 100%;
-}
+<header>
+</header>
+<div class="container">
+    <div class="image-container main-image-container">
+        <img src="https://cdn.discordapp.com/attachments/509038428059336756/1155865541194563656/Untitled-1.png"
+             alt="Leaa Love" class="main-image">
+    </div>
 
-.icon{
-    margin: 4px 8px;
-    width: 64px;
-    height: 52px;
-}
+    <h1 style="font-family: 'MV Boli';">Secret Lia</h1>
 
-.tile:hover {
-    transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
-    transform: scale(1.03);
-}
+    <!-- Rest of your content -->
 
-body {
-    background-image: url(https://images.unsplash.com/photo-1614283180581-d5988fd52837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGluayUyMGdyYWRpZW50fGVufDB8fDB8fHww&w=1000&q=80); /* Replace with your image's URL or file path */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the image fixed while scrolling */
-}
+</div>
 
-#user-location {
-    font-family: 'Bahnschrift', sans-serif;
-    font-size: 22px;/* Replace 'YourDesiredFont' with the actual font name */
-}
+<a class="tile" href="https://onlyfans.com/secret-lia/c216">
+    <div class="icon">
+        <!-- Add your SVG icon code here -->
+    </div>
+    <img src="https://1000logos.net/wp-content/uploads/2022/01/Onlyfans-Logo.png" alt="Image Alt Text" width="100%" height="auto">
+    <div class="tile-share-button"></div>
+</a>
 
-#pin-emoji {
-    font-family: 'YourDesiredFont', sans-serif; /* Replace 'YourDesiredFont' with the actual font name */
-}
+<p style="font-family: 'MV Boli', sans-serif; font-weight: 600; font-size
