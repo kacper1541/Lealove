@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linktree clone</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh; /* Ensure the page takes at least the full height of the viewport */
+            margin: 0; /* Remove default margin */
+            background-color: rgb(252, 250, 252); /* Set background color if needed */
+        }
+
+        .container {
+            text-align: center; /* Center the text within the container */
+        }
+
+        .main-image-container {
+            width: 500px; /* Set your desired width */
+            height: 500px; /* Set your desired height */
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+</header>
+<div class="container">
+    <div class="image-container main-image-container">
+        <img src="https://cdn.discordapp.com/attachments/509038428059336756/1155865541194563656/Untitled-1.png"
+             alt="Leaa Love" class="main-image">
+    </div>
+
+    <h1 style="font-family: 'MV Boli';">Secret Lia</h1>
+
+    <!-- Rest of your content -->
+
+</div>
+
+<a class="tile" href="https://onlyfans.com/secret-lia/c216">
+    <div class="icon">
+        <!-- Add your SVG icon code here -->
+    </div>
+    <img src="https://1000logos.net/wp-content/uploads/2022/01/Onlyfans-Logo.png" alt="Image Alt Text" width="200" height="auto">
+    <div class="tile-share-button"></div>
+</a>
+
+<p style="font-family: 'MV Boli', sans-serif; font-weight: 600; font-size: 17px;">Looking for someone to shoot content with
+    <br>message me on OnlyFans if we're close 💦</p>
+
+<section id="location-section">
+    <p>
+        <span id="user-location">Loading...</span>
+        <span id="pin-emoji">📍</span>
+    </p>
+</section>
+<!-- Reference the external JavaScript file -->
+<script src="location.java.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<p style="font-family: 'Bahnschrift', sans-serif; font-size: 20px; color: #333;">ONLINE NOW<span>&#x1F7E2;</span></p>
+
+</body>
+</html>
