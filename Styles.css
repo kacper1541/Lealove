@@ -24,12 +24,6 @@ header {
     margin-top: 10px; /* Corrected the colon after margin-top */
 }
 
-.share-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: rgb(252, 247, 252);
-}
 
 .container {
     width: 90%;
@@ -50,7 +44,7 @@ a {
 
 .tile {
     width: 80%;
-    height: 70px;
+    height: 55px;
     background-color: rgb(252, 250, 252);
     margin: 7px;
     border-radius: 48px;
