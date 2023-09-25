@@ -1,132 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Linktree clone</title>
-    <link rel="stylesheet" href="Styles.css">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 70vh;
-            margin: 0;
-            background-color: rgb(252, 250, 252);
-        }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 195, 243);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
 
-        .container {
-            text-align: center;
-        }
 
-        .main-image-container {
-            width: 500px;
-            height: 500px;
-            overflow: hidden;
-        }
 
-        .tile {
-            width: 80%;
-            height: 70px;
-            background-color: rgb(252, 250, 252);
-            margin: 7px;
-            border-radius: 48px;
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-            margin-top: -15px;
+}
+h1 {
+    font-size: 44px;
+    margin-top: -30px;/* Adjust the font size to your desired value */
 
-            animation-name: breathe;
-            animation-duration: 3s;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-        }
+}
+header {
+    width: 95%;
+    max-width: 688px;
+    display: flex; /* Corrected the spelling of display */
+    justify-content: flex-end;
+    padding: 0px;
+    margin-top: 15px; /* Corrected the colon after margin-top */
+}
 
-        @keyframes breathe {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
+.share-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(252, 247, 252);
+}
 
-        .image-container {
-            height: 296px;
-            width: 296px;
-            overflow: hidden;
-        }
+.container {
+    width: 90%;
+    max-width: 680px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
-        .image-container img {
-            height: 100%;
-            width: 100%;
-        }
 
-        .icon {
-            margin: 4px 8px;
-            width: 64px;
-            height: 52px;
-        }
+}
 
-        .tile:hover {
-            transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
-            transform: scale(1.03);
-        }
+a {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
 
-        body {
-            background-image: url(https://images.unsplash.com/photo-1614283180581-d5988fd52837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGluayUyMGdyYWRpZW50fGVufDB8fDB8fHww&w=1000&q=80);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
+.tile {
+    width: 80%;
+    height: 70px;
+    background-color: rgb(252, 250, 252);
+    margin: 7px;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    margin-top: -15px;
 
-        #user-location {
-            font-family: 'Bahnschrift', sans-serif;
-            font-size: 32px;
-        }
+    animation-name: breathe;
+    animation-duration: 3s; /* Adjust the duration as needed */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* Infinite loop */
+}
 
-        #pin-emoji {
-            font-family: 'YourDesiredFont', sans-serif;
-        }
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Scale up */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
-        /* Add a maximum width for the OnlyFans logo image */
-        .onlyfans-logo {
-            max-width: 100%; /* Adjust the maximum width as needed */
-            height: auto; /* Allow the image to scale proportionally */
-        }
-    </style>
-</head>
-<body>
-    <header></header>
-    <div class="container">
-        <div class="image-container main-image-container">
-            <img src="https://cdn.discordapp.com/attachments/509038428059336756/1155865541194563656/Untitled-1.png"
-                alt="Leaa Love" class="main-image">
-        </div>
-        <h1 style="font-family: 'MV Boli';">Secret Lia</h1>
-    </div>
-    <a class="tile" href="https://onlyfans.com/secret-lia/c216">
-        <div class="icon"></div>
-        <!-- Add your SVG icon code here -->
-        <img src="https://1000logos.net/wp-content/uploads/2022/01/Onlyfans-Logo.png"
-            alt="Image Alt Text" class="onlyfans-logo">
-        <div class="tile-share-button"></div>
-    </a>
-    <p style="font-family: 'MV Boli', sans-serif; font-weight: 600; font-size: 27px;">Looking for someone to shoot content with
-        <br>message me on OnlyFans if we're close 💦</p>
-    <section id="location-section">
-        <p>
-            <span id="user-location">Loading...</span>
-            <span id="pin-emoji">📍</span>
-        </p>
-    </section>
-    <!-- Reference the external JavaScript file -->
-    <script src="location.java.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <p style="font-family: 'Bahnschrift', sans-serif; font-size: 26px; color: #333;">ONLINE NOW<span>&#x1F7E2;</span></p>
-</body>
-</html>
+
+.image-container {
+    height: 296px;
+    width: 296px;
+    overflow: hidden;
+
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.icon{
+    margin: 4px 8px;
+    width: 64px;
+    height: 52px;
+}
+
+.tile:hover {
+    transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
+    transform: scale(1.03);
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1614283180581-d5988fd52837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGluayUyMGdyYWRpZW50fGVufDB8fDB8fHww&w=1000&q=80); /* Replace with your image's URL or file path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
+
+#user-location {
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 32px;/* Replace 'YourDesiredFont' with the actual font name */
+}
+
+#pin-emoji {
+    font-family: 'YourDesiredFont', sans-serif; /* Replace 'YourDesiredFont' with the actual font name */
+}
