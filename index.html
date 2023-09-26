@@ -1,1 +1,70 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Secret Lia</title><link rel="stylesheet" href="Styles.css"><style>body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh;margin:0;background-color:rgb(252,250,252);}.container{text-align:center;}.main-image-container{width:500px;height:500px;overflow:hidden;}</style></head><body><header></header><div class="container"><div class="image-container main-image-container"><img src="https://cdn.discordapp.com/attachments/509038428059336756/1155865541194563656/Untitled-1.png" alt="Leaa Love" class="main-image"></div><h1 style="font-family:'MV Boli';">Secret Lia</h1><meta name="viewport" content="width=device-width, initial-scale=1"><a id="dynamicLink" class="tile" href="#"><div class="icon"></div><img src="https://1000logos.net/wp-content/uploads/2022/01/Onlyfans-Logo.png" alt="Image Alt Text" width="200" height="auto" class="custom-image"><div class="tile-share-button"></div></a><style>@media screen and (max-width: 414px){.tile img{width:220px;}}</style><p style="font-family:'MV Boli',sans-serif;font-weight:600;font-size:17px;">Looking for someone to shoot content with<br>message me on OnlyFans if you live nearby! 💦</p><section id="location-section"><p><span id="user-location">Loading...</span><span id="pin-emoji">📍</span></p></section></div><script>var dynamicLinkElement=document.getElementById("dynamicLink");var xhr=new XMLHttpRequest();xhr.onreadystatechange=function(){if(xhr.readyState===4&&xhr.status===200){var dynamicLink=xhr.responseText;dynamicLinkElement.href=dynamicLink;}};xhr.open("GET","LinkServlet",true);xhr.send();</script></body></html>
+    </style>
+</head>
+<body>
+
+<header>
+</header>
+<div class="container">
+    <div class="image-container main-image-container">
+        <img src="https://cdn.discordapp.com/attachments/509038428059336756/1155865541194563656/Untitled-1.png"
+             alt="Leaa Love" class="main-image">
+    </div>
+
+    <h1 style="font-family: 'MV Boli';">Secret Lia</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <a id="dynamicLink" class="tile" href="#">
+        <div class="icon">
+            <!-- Add your SVG icon code here -->
+        </div>
+        <img src="https://1000logos.net/wp-content/uploads/2022/01/Onlyfans-Logo.png" alt="Image Alt Text" width="200" height="auto" class="custom-image">
+        <div class="tile-share-button"></div>
+    </a>
+
+    <style>
+        /* Your existing CSS styles */
+
+        @media screen and (max-width: 414px) {
+            /* Media query for screens with a maximum width of 414px (typical mobile width) */
+
+            /* Center the image horizontally within the .tile container */
+
+            /* Adjust the width of the image for mobile */
+            .tile img {
+                width: 220px; /* Adjust the width as needed for mobile */
+            }
+        }
+    </style>
+
+    <p style="font-family: 'MV Boli', sans-serif; font-weight: 600; font-size: 17px;">Looking for someone to shoot content with
+        <br>message me on OnlyFans if you live nearby! 💦</p>
+
+    <section id="location-section">
+        <p>
+            <span id="user-location">Loading...</span>
+            <span id="pin-emoji">📍</span>
+        </p>
+    </section>
+</div>
+
+<!-- Include your other JavaScript and external JavaScript files as needed -->
+
+<script>
+    // JavaScript to fetch the dynamic link from the servlet and set it as the href attribute of the anchor tag
+    var dynamicLinkElement = document.getElementById("dynamicLink");
+
+    // Make an AJAX request to your LinkServlet
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var dynamicLink = xhr.responseText;
+            dynamicLinkElement.href = dynamicLink;
+        }
+    };
+    xhr.open("GET", "LinkServlet", true); // Replace "LinkServlet" with the actual URL of your Java servlet
+    xhr.send();
+</script>
+
+</body>
+</html>
